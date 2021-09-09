@@ -1,0 +1,383 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Fresh food</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@100;300;400;500;700;900&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="assets/Font awesome/css/fontawesome.css">
+    <link rel="stylesheet" href="assets/Font awesome/css/brands.css">
+    <link rel="stylesheet" href="assets/Font awesome/css/solid.css">
+    <link rel="stylesheet" href="assets/Font awesome/css/all.css">
+    <link rel="stylesheet" href="assets/css/reset.css">
+    <link rel="stylesheet" href="assets/css/grid.css">
+    <link rel="stylesheet" href="assets/css/base.css">
+    <link rel="stylesheet" href="assets/css/main.css">
+    <link rel="stylesheet" href="assets/css/responsive.css">
+</head>
+
+<body>
+    <div class="wrapper">
+        <!-- Header -->
+        <header class="header">
+            <div class="grid wide header-content">
+                <a href="index.html" class="header-logo">
+                    <img src="assets/img/logo.png" alt="Header logo">
+                </a>
+                <div class="header-nav">
+                    <ul class="header-menu hide-on-mobile-tablet">
+                        <li class="menu-item">
+                            <a href="index.html" class="item-link">
+                                Trang chủ
+                            </a>
+                        </li>
+                        <li class="menu-item">
+                            <a href="category-product.html" class="item-link">
+                                Thịt tươi
+                            </a>
+                        </li>
+                        <li class="menu-item">
+                            <a href="category-product.html" class="item-link">
+                                Rau sạch
+                            </a>
+                        </li>
+                        <li class="menu-item">
+                            <a href="category-product.html" class="item-link">
+                                Quả ngọt
+                            </a>
+                        </li>
+                        <li class="menu-item">
+                            <a href="category-news.html" class="item-link">
+                                Cẩm nang
+                            </a>
+                        </li>
+                        <li class="menu-item">
+                            <a href="#footer" class="item-link">
+                                Liên hệ
+                            </a>
+                        </li>
+                        <li class="menu-item">
+                            <a href="cart.html" class="item-link">
+                                Thanh toán
+                            </a>
+                        </li>
+                    </ul>
+                    <div class="header-search">
+                        <label for="search-box-input" class="search-link">
+                                <i class="fas fa-search search-logo"></i>
+                        </label>
+
+                        <input type="checkbox" hidden id="search-box-input">
+                        <div class="search-box">
+                            <input type="text" class="search-input" placeholder="Search">
+                            <i class="fas fa-search search-btn"></i>
+                        </div>
+                    </div>
+                    <div class="header-cart">
+                        <a href="cart.html" class="cart has-cart">
+                            <img src="assets/img/cart/cart.png" alt="Cart" class="cart-logo">
+                            <span class="cart-num">3</span>
+                        </a>
+                    </div>
+                    <div class="header-mobile hide-on-pc">
+                        <input type="checkbox" hidden id="header-menu-input">
+                        <label for="header-menu-input" class="overlay"></label>
+                        <label for="header-menu-input" class="header-mobile-icon">
+                            <i class="fas fa-bars"></i>
+                        </label>
+                        <div class="mobile-menu">
+                            <label for="header-menu-input" class="esc-btn">
+                                <i class="fas fa-times"></i>
+                            </label>
+                            <img src="assets/img/logo.png" alt="Logo" class="mobile-menu-logo">
+                            <ul class="mobile-list">
+                                <li class="mobile-item">
+                                    <a href="index.html" class="mobile-link">Trang chủ</a>
+                                </li>
+                                <li class="mobile-item">
+                                    <a href="category-news.html" class="mobile-link">Cẩm nang</a>
+                                </li>
+                                <li class="mobile-item">
+                                    <a href="cart.html" class="mobile-link">Thanh toán</a>
+                                </li>
+                                <li class="mobile-item">
+                                    <a href="" class="mobile-link">Liên hệ</a>
+                                </li>
+                            </ul>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </header>
+
+        <!-- Container -->
+        <div class="container">
+            <!-- Slider -->
+            <div class="slider">
+                <div class="slide-list">
+                    <input type="radio" name="r" id="btn-input-1" class="btn" checked>
+                    <input type="radio" name="r" id="btn-input-2" class="btn">
+                    <input type="radio" name="r" id="btn-input-3" class="btn">
+                    <input type="radio" name="r" id="btn-input-4" class="btn">
+
+                    <div class="slide-item sl1">
+                        <img src="assets/img/slide/slide-img.png" class="slide-img" alt="Slide img">
+                    </div>
+                    <div class="slide-item">
+                        <img src="assets/img/slide/slide-img.png" class="slide-img" alt="Slide img">
+                    </div>
+                    <div class="slide-item">
+                        <img src="assets/img/slide/slide-img.png" class="slide-img" alt="Slide img">
+                    </div>
+                    <div class="slide-item">
+                        <img src="assets/img/slide/slide-img.png" class="slide-img" alt="Slide img">
+                    </div>
+                </div>
+            </div>
+
+            <!-- Category -->
+            <div class="grid wide category">
+                <a href="category-product.html" class="category-item" style="background-image: url(assets/img/category/category-img-1.png);">
+                    <span class="item-border">
+                        <span class="item-text">
+                            Thực phẩm
+                        </span>
+                    </span>
+                </a>
+                <a href="category-product.html" class="category-item" style="background-image: url(assets/img/category/category-img-2.png);">
+                    <span class=" item-border ">
+                        <span class="item-text ">
+                            Rau sạch
+                        </span>
+                    </span>
+                </a>
+                <a href="category-product.html" class="category-item" style="background-image: url(assets/img/category/category-img-3.png);">
+                    <span class="item-border">
+                        <span class="item-text">
+                            Trái cây
+                        </span>
+                    </span>
+                </a>
+            </div>
+
+            <!-- New product -->
+            <div class="new-product">
+                <div class="grid wide content-section">
+                    <div class="title-section">
+                        <p class="title-content">Thực phẩm mới nhất</p>
+                        <img src="assets/img/new-product/new-product-logo.png" alt="" class="section-logo">
+                    </div>
+                    <div class="section-detail">
+                        <div class="new-product-slide">
+                            <div class="new-product-list">
+                                <input type="radio" name="n" hidden id="btn-left">
+                                <input type="radio" name="n" hidden id="btn-right">
+                                <ul class="product-list pl1">
+                                    <li class="product-item">
+                                        <a href="detail-product.html" class="product-link">
+                                            <img src="assets/img/new-product/new-product-1.png" alt="New Product" class="product-img">
+                                            <div class="product-info">
+                                                <p class="product-name">Xà lách Lâm Đồng</p>
+                                                <span class="product-price">25.000 VNĐ</span>
+                                                <span class="add-cart">Thêm vào giỏ hàng</span>
+                                            </div>
+                                        </a>
+                                    </li>
+                                    <li class="product-item">
+                                        <a href="detail-product.html" class="product-link">
+                                            <img src="assets/img/new-product/new-product-2.png" alt="New Product" class="product-img">
+                                            <div class="product-info">
+                                                <p class="product-name">Dẻ sường bò Úc</p>
+                                                <span class="product-price">250.000 VNĐ</span>
+                                                <span class="add-cart">Thêm vào giỏ hàng</span>
+                                            </div>
+                                        </a>
+                                    </li>
+                                    <li class="product-item">
+                                        <a href="detail-product.html" class="product-link">
+                                            <img src="assets/img/new-product/new-product-3.png" alt="New Product" class="product-img">
+                                            <div class="product-info">
+                                                <p class="product-name">Nho đen Mỹ</p>
+                                                <span class="product-price">100.000 VNĐ</span>
+                                                <span class="add-cart">Thêm vào giỏ hàng</span>
+                                            </div>
+                                        </a>
+                                    </li>
+                                    <li class="product-item">
+                                        <a href="detail-product.html" class="product-link">
+                                            <img src="assets/img/new-product/new-product-4.png" alt="New Product" class="product-img">
+                                            <div class="product-info">
+                                                <p class="product-name">Ngao trắng</p>
+                                                <span class="product-price">75.000 VNĐ</span>
+                                                <span class="add-cart">Thêm vào giỏ hàng</span>
+                                            </div>
+                                        </a>
+                                    </li>
+                                </ul>
+                                <ul class="product-list">
+                                    <li class="product-item">
+                                        <a href="detail-product.html" class="product-link">
+                                            <img src="assets/img/new-product/new-product-1.png" alt="New Product" class="product-img">
+                                            <div class="product-info">
+                                                <p class="product-name">Xà lách Lâm Đồng</p>
+                                                <span class="product-price">25.000 VNĐ</span>
+                                                <span class="add-cart">Thêm vào giỏ hàng</span>
+                                            </div>
+                                        </a>
+                                    </li>
+                                    <li class="product-item">
+                                        <a href="detail-product.html" class="product-link">
+                                            <img src="assets/img/new-product/new-product-2.png" alt="New Product" class="product-img">
+                                            <div class="product-info">
+                                                <p class="product-name">Dẻ sường bò Úc</p>
+                                                <span class="product-price">250.000 VNĐ</span>
+                                                <span class="add-cart">Thêm vào giỏ hàng</span>
+                                            </div>
+                                        </a>
+                                    </li>
+                                    <li class="product-item">
+                                        <a href="detail-product.html" class="product-link">
+                                            <img src="assets/img/new-product/new-product-3.png" alt="New Product" class="product-img">
+                                            <div class="product-info">
+                                                <p class="product-name">Nho đen Mỹ</p>
+                                                <span class="product-price">100.000 VNĐ</span>
+                                                <span class="add-cart">Thêm vào giỏ hàng</span>
+                                            </div>
+                                        </a>
+                                    </li>
+                                    <li class="product-item">
+                                        <a href="detail-product.html" class="product-link">
+                                            <img src="assets/img/new-product/new-product-4.png" alt="New Product" class="product-img">
+                                            <div class="product-info">
+                                                <p class="product-name">Ngao trắng</p>
+                                                <span class="product-price">75.000 VNĐ</span>
+                                                <span class="add-cart">Thêm vào giỏ hàng</span>
+                                            </div>
+                                        </a>
+                                    </li>
+                                </ul>
+                            </div>
+                        </div>
+                        <label for="btn-left" class="arrow-left">
+                            <i class="fas fa-angle-left"></i>
+                        </label>
+                        <label for="btn-right" class="arrow-right">
+                            <i class="fas fa-angle-right"></i>
+                        </label>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Hand book -->
+            <div class="hand-book">
+                <div class="grid wide content-section">
+                    <div class="title-section">
+                        <p class="title-content">Cẩm nang nấu ăn</p>
+                        <img src="assets/img/hand-book/hand-book-logo.png" alt="" class="section-logo">
+                    </div>
+                    <div class="row">
+                        <div class="col l-4 m-6 c-12">
+                            <a href="detail-news.html" class="hand-book-item">
+                                <img src="assets/img/hand-book/hand-book-img-1.png" alt="Hand book img">
+                                <p class="item-title">Thịt bò hầm nấm</p>
+                                <p class="item-descript">Chúng ta vẫn biết rằng, làm việc với một đoạn văn bản dễ đọc và rõ nghĩa dễ gây rối trí và cản trở việc tập trung vào yếu tố trình bày văn bản [...]</p>
+                            </a>
+                        </div>
+                        <div class="col l-4 m-6 c-12">
+                            <a href="detail-news.html" class="hand-book-item">
+                                <img src="assets/img/hand-book/hand-book-img-2.png" alt="Hand book img">
+                                <p class="item-title">Dạ dày trộn cay</p>
+                                <p class="item-descript">Chúng ta vẫn biết rằng, làm việc với một đoạn văn bản dễ đọc và rõ nghĩa dễ gây rối trí và cản trở việc tập trung vào yếu tố trình bày văn bản [...]</p>
+                            </a>
+                        </div>
+                        <div class="col l-4 m-12 c-12">
+                            <a href="detail-news.html" class="hand-book-item">
+                                <img src="assets/img/hand-book/hand-book-img-3.png" alt="Hand book img">
+                                <p class="item-title">Bí quyết nấu ăn ngon</p>
+                                <p class="item-descript">Chúng ta vẫn biết rằng, làm việc với một đoạn văn bản dễ đọc và rõ nghĩa dễ gây rối trí và cản trở việc tập trung vào yếu tố trình bày văn bản...</p>
+                            </a>
+                        </div>
+                    </div>
+                </div>
+
+            </div>
+        </div>
+
+        <!-- Footer -->
+        <footer class="footer" id="footer">
+            <div class="grid wide">
+                <div class="row footer-mobile">
+                    <div class="col l-4 m-6 c-12">
+                        <p class="footer-title">
+                            Trụ sở chính:
+                        </p>
+                        <a href="" class="footer-contact">
+                            Số 6A8A, Thanh Xuân Bắc, Phường Thanh Xuân Bắc, Quận Thanh Xuân, Thành phố Hà Nội.
+                        </a>
+                        <span class="footer-contact">
+                            Điện thoại:
+                            <a href="tel: 04.3311.3998">
+                                 04.3311.3998    
+                            </a>
+                        </span>
+                        <span class="footer-contact">
+                            Fax:
+                            <a href="tel: 04.3311.3998">
+                                 04.3311.3998    
+                            </a>
+                        </span>
+                    </div>
+                    <div class="col l-4 m-6 c-12">
+                        <p class="footer-title">
+                            Chi nhánh Đà Nẵng:
+                        </p>
+                        <a href="" class="footer-contact">
+                            Số 6A8A, Thanh Xuân Bắc, Phường Thanh Xuân Bắc, Quận Thanh Xuân, Thành phố Hà Nội.
+                        </a>
+                        <span class="footer-contact">
+                            Điện thoại:
+                            <a href="tel: 04.3311.3998">
+                                 04.3311.3998    
+                            </a>
+                        </span>
+                        <span class="footer-contact">
+                            Fax:
+                            <a href="tel: 04.3311.3998">
+                                 04.3311.3998    
+                            </a>
+                        </span>
+                    </div>
+                    <div class="col l-4 m-12 c-12">
+                        <p class="footer-title">
+                            Chi nhánh Hồ Chí Minh:
+                        </p>
+                        <a href="" class="footer-contact">
+                            Số 6A8A, Thanh Xuân Bắc, Phường Thanh Xuân Bắc, Quận Thanh Xuân, Thành phố Hà Nội.
+                        </a>
+                        <span class="footer-contact">
+                            Điện thoại:
+                            <a href="tel: 04.3311.3998">
+                                 04.3311.3998    
+                            </a>
+                        </span>
+                        <span class="footer-contact">
+                            Fax:
+                            <a href="tel: 04.3311.3998">
+                                 04.3311.3998    
+                            </a>
+                        </span>
+                    </div>
+                </div>
+            </div>
+            <div class="footer-copyright">
+                <p class="text-copyright ">Copyright © 2016 - All rights reserved</p>
+            </div>
+        </footer>
+    </div>
+</body>
+
+</html>

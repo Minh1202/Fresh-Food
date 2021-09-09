@@ -1,0 +1,38 @@
+/* News */
+
+.news-title {
+    font-size: 2.4rem;
+    font-weight: 500;
+    line-height: 36px;
+    margin-bottom: 6px;
+}
+
+.news-time {
+    font-size: 1.3rem;
+    color: #777;
+    margin-bottom: 22px;
+    display: block;
+}
+
+.news-content {
+    font-size: 1.4rem;
+    line-height: 26px;
+    text-align: justify;
+    color: #636363;
+}
+
+.news-img {
+    margin: 26px 0;
+    text-align: center;
+}
+
+.news-img img {
+    width: 70%;
+}
+
+
+/* Comment */
+
+.comment-content {
+    margin-top: 46px;
+}

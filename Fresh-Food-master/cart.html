@@ -1,0 +1,331 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Fresh food</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@100;300;400;500;700;900&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="assets/Font awesome/css/fontawesome.css">
+    <link rel="stylesheet" href="assets/Font awesome/css/brands.css">
+    <link rel="stylesheet" href="assets/Font awesome/css/solid.css">
+    <link rel="stylesheet" href="assets/Font awesome/css/all.css">
+    <link rel="stylesheet" href="assets/css/reset.css">
+    <link rel="stylesheet" href="assets/css/grid.css">
+    <link rel="stylesheet" href="assets/css/base.css">
+    <link rel="stylesheet" href="assets/css/cart.css">
+    <link rel="stylesheet" href="assets/css/responsive.css">
+</head>
+
+<body>
+    <div class="wrapper">
+        <!-- Header -->
+        <header class="header">
+            <div class="grid wide header-content">
+                <a href="index.html" class="header-logo">
+                    <img src="assets/img/logo.png" alt="Header logo">
+                </a>
+                <div class="header-nav">
+                    <ul class="header-menu hide-on-mobile-tablet">
+                        <li class="menu-item">
+                            <a href="index.html" class="item-link">
+                                Trang chủ
+                            </a>
+                        </li>
+                        <li class="menu-item">
+                            <a href="category-product.html" class="item-link">
+                                Thịt tươi
+                            </a>
+                        </li>
+                        <li class="menu-item">
+                            <a href="category-product.html" class="item-link">
+                                Rau sạch
+                            </a>
+                        </li>
+                        <li class="menu-item">
+                            <a href="category-product.html" class="item-link">
+                                Quả ngọt
+                            </a>
+                        </li>
+                        <li class="menu-item">
+                            <a href="category-news.html" class="item-link">
+                                Cẩm nang
+                            </a>
+                        </li>
+                        <li class="menu-item">
+                            <a href="#footer" class="item-link">
+                                Liên hệ
+                            </a>
+                        </li>
+                        <li class="menu-item">
+                            <a href="cart.html" class="item-link">
+                                Thanh toán
+                            </a>
+                        </li>
+                    </ul>
+                    <div class="header-search">
+                        <label for="search-box-input" class="search-link">
+                                <i class="fas fa-search search-logo"></i>
+                        </label>
+
+                        <input type="checkbox" hidden id="search-box-input">
+                        <div class="search-box">
+                            <input type="text" class="search-input" placeholder="Search">
+                            <i class="fas fa-search search-btn"></i>
+                        </div>
+                    </div>
+                    <div class="header-cart">
+                        <a href="cart.html" class="cart has-cart">
+                            <img src="assets/img/cart/cart.png" alt="Cart" class="cart-logo">
+                            <span class="cart-num">3</span>
+                        </a>
+                    </div>
+                    <div class="header-mobile hide-on-pc">
+                        <input type="checkbox" hidden id="header-menu-input">
+                        <label for="header-menu-input" class="overlay"></label>
+                        <label for="header-menu-input" class="header-mobile-icon">
+                            <i class="fas fa-bars"></i>
+                        </label>
+                        <div class="mobile-menu">
+                            <label for="header-menu-input" class="esc-btn">
+                                <i class="fas fa-times"></i>
+                            </label>
+                            <img src="assets/img/logo.png" alt="Logo" class="mobile-menu-logo">
+                            <ul class="mobile-list">
+                                <li class="mobile-item">
+                                    <a href="index.html" class="mobile-link">Trang chủ</a>
+                                </li>
+                                <li class="mobile-item">
+                                    <a href="category-news.html" class="mobile-link">Cẩm nang</a>
+                                </li>
+                                <li class="mobile-item">
+                                    <a href="cart.html" class="mobile-link">Thanh toán</a>
+                                </li>
+                                <li class="mobile-item">
+                                    <a href="#footer" class="mobile-link">Liên hệ</a>
+                                </li>
+                            </ul>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </header>
+
+        <!-- Container -->
+        <div class="container">
+            <div class="breadcrumb">
+                <img src="assets/img/category-product/breadcrumb.png" class="breadcrumb-img" alt="Breadcrumb background">
+                <div class="breadcrumb-content">
+                    <span class="breadcrumb-text">
+                        <i class="fas fa-home"></i>
+                    </span>
+                    <span class="breadcrumb-text">
+                        <a href="index.html" class="breadcrumb-link">
+                            Trang chủ
+                        </a>
+                    </span>
+                    <span class="breadcrumb-text">
+                        <i class="fas fa-angle-right"></i>
+                    </span>
+                    <span class="breadcrumb-text">
+                        <a href="#" class="breadcrumb-link">
+                            Thực phẩm
+                        </a>
+                    </span>
+                </div>
+            </div>
+            <div class="grid wide ">
+                <!-- Cart -->
+                <div class="cart-detail">
+                    <div class="cart-detail-title">
+                        <span class="cart-title cart-code-product">Mã sản phẩm</span>
+                        <span class="cart-title">Ảnh</span>
+                        <span class="cart-title cart-name-title">Tên sản phẩm</span>
+                        <span class="cart-title">Số lượng</span>
+                        <span class="cart-title">Giá</span>
+                        <span class="cart-title">Tổng</span>
+                        <span class="cart-title">Thao tác</span>
+                    </div>
+                    <ul class="cart-detail-content">
+                        <li class="product-item">
+                            <span class="product-code">Frte0001</span>
+                            <span class="product-img">
+                                <a href="detail-product.html">
+                                    <div class="cart-product-img" style="background-image: url(assets/img/detail-product/product-img.png);"></div>
+                                </a>
+                            </span>
+                            <span class="product-name">Cá hồi bắc âu</span>
+                            <span class="product-number">
+                                <input type="tel" class="number" value="1"> Kg
+                            </span>
+                            <span class="product-price">250.000đ</span>
+                            <span class="product-total hide-on-mobile">250.000đ</span>
+                            <span class="product-operation">
+                                <p class="product-delete">Xóa</p>
+                            </span>
+                        </li>
+                        <li class="product-item">
+                            <span class="product-code">Frte0001</span>
+                            <span class="product-img">
+                                <a href="detail-product.html">
+                                    <div class="cart-product-img" style="background-image: url(assets/img/detail-product/product-img.png);"></div>
+                                </a>
+                            </span>
+                            <span class="product-name">Cá hồi bắc âu</span>
+                            <span class="product-number">
+                                <input type="tel" class="number" value="1"> Kg
+                            </span>
+                            <span class="product-price">250.000đ</span>
+                            <span class="product-total hide-on-mobile">250.000đ</span>
+                            <span class="product-operation">
+                                <p class="product-delete">Xóa</p>
+                            </span>
+                        </li>
+                        <li class="product-item">
+                            <span class="product-code">Frte0001</span>
+                            <span class="product-img">
+                                <a href="detail-product.html">
+                                    <div class="cart-product-img" style="background-image: url(assets/img/detail-product/product-img.png);"></div>
+                                </a>
+                            </span>
+                            <span class="product-name">Cá hồi bắc âu</span>
+                            <span class="product-number">
+                                <input type="tel" class="number" value="1"> Kg
+                            </span>
+                            <span class="product-price">250.000đ</span>
+                            <span class="product-total hide-on-mobile">250.000đ</span>
+                            <span class="product-operation">
+                                <p class="product-delete">Xóa</p>
+                            </span>
+                        </li>
+                    </ul>
+                    <div class="cart-total hide-on-mobile">
+                        <span class="price-total">Tổng: 750.000đ</span>
+                        <div class="cart-operation">
+                            <button class="btn cart-btn hide-on-mobile">
+                                Cập nhật giỏ hàng
+                            </button>
+                            <button class="btn cart-btn hide-on-mobile">
+                                Xoá giỏ hàng
+                            </button>
+                            <button class="btn cart-btn hide-on-mobile">
+                                    Đặt mua & thanh toán
+                            </button>
+                        </div>
+                    </div>
+                    <div class="cart-total mobile-cart hide-on-pc hide-on-tablet">
+                        <span class="price-total">Tổng: 750.000đ</span>
+                        <div class="cart-operation">
+                            <a href="" class="cart-btn-link">
+                                <button class="btn cart-btn">
+                                    Cập nhật giỏ hàng
+                                </button>
+                            </a>
+                            <a href="#pay" class="cart-btn-link">
+                                <button class="btn cart-btn">
+                                    Thanh toán
+                                </button>
+                            </a>
+                        </div>
+                    </div>
+
+                </div>
+
+                <!-- Payment -->
+                <div class="payment" id="pay">
+                    <p class="payment-title">Đặt hàng và thanh toán</p>
+                    <p class="payment-label">Email:</p>
+                    <input type="email" class="payment-input">
+                    <p class="payment-label">Họ và tên:</p>
+                    <input type="text" class="payment-input">
+                    <p class="payment-label">Điện thoại:</p>
+                    <input type="tel" class="payment-input">
+                    <p class="payment-label">Địa chỉ:</p>
+                    <input type="text" class="payment-input">
+
+                    <button class="payment-btn btn">
+                        Áp dụng
+                    </button>
+                </div>
+            </div>
+        </div>
+
+        <!-- Footer -->
+        <footer class="footer" id="footer">
+            <div class="grid wide">
+                <div class="row footer-mobile">
+                    <div class="col l-4 m-6 c-12">
+                        <p class="footer-title">
+                            Trụ sở chính:
+                        </p>
+                        <a href="" class="footer-contact">
+                            Số 6A8A, Thanh Xuân Bắc, Phường Thanh Xuân Bắc, Quận Thanh Xuân, Thành phố Hà Nội.
+                        </a>
+                        <span class="footer-contact">
+                            Điện thoại:
+                            <a href="tel: 04.3311.3998">
+                                 04.3311.3998    
+                            </a>
+                        </span>
+                        <span class="footer-contact">
+                            Fax:
+                            <a href="tel: 04.3311.3998">
+                                 04.3311.3998    
+                            </a>
+                        </span>
+                    </div>
+                    <div class="col l-4 m-6 c-12">
+                        <p class="footer-title">
+                            Chi nhánh Đà Nẵng:
+                        </p>
+                        <a href="" class="footer-contact">
+                            Số 6A8A, Thanh Xuân Bắc, Phường Thanh Xuân Bắc, Quận Thanh Xuân, Thành phố Hà Nội.
+                        </a>
+                        <span class="footer-contact">
+                            Điện thoại:
+                            <a href="tel: 04.3311.3998">
+                                 04.3311.3998    
+                            </a>
+                        </span>
+                        <span class="footer-contact">
+                            Fax:
+                            <a href="tel: 04.3311.3998">
+                                 04.3311.3998    
+                            </a>
+                        </span>
+                    </div>
+                    <div class="col l-4 m-12 c-12">
+                        <p class="footer-title">
+                            Chi nhánh Hồ Chí Minh:
+                        </p>
+                        <a href="" class="footer-contact">
+                            Số 6A8A, Thanh Xuân Bắc, Phường Thanh Xuân Bắc, Quận Thanh Xuân, Thành phố Hà Nội.
+                        </a>
+                        <span class="footer-contact">
+                            Điện thoại:
+                            <a href="tel: 04.3311.3998">
+                                 04.3311.3998    
+                            </a>
+                        </span>
+                        <span class="footer-contact">
+                            Fax:
+                            <a href="tel: 04.3311.3998">
+                                 04.3311.3998    
+                            </a>
+                        </span>
+                    </div>
+                </div>
+            </div>
+            <div class="footer-copyright">
+                <p class="text-copyright ">Copyright © 2016 - All rights reserved</p>
+            </div>
+        </footer>
+    </div>
+    <div id="fb-root"></div>
+    <script async defer crossorigin="anonymous" src="https://connect.facebook.net/vi_VN/sdk.js#xfbml=1&version=v11.0&appId=179877092711082&autoLogAppEvents=1" nonce="xtfaUabL"></script>
+</body>
+
+</html>

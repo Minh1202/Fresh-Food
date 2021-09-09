@@ -1,0 +1,396 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Fresh food</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@100;300;400;500;700;900&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="assets/Font awesome/css/fontawesome.css">
+    <link rel="stylesheet" href="assets/Font awesome/css/brands.css">
+    <link rel="stylesheet" href="assets/Font awesome/css/solid.css">
+    <link rel="stylesheet" href="assets/Font awesome/css/all.css">
+    <link rel="stylesheet" href="assets/css/reset.css">
+    <link rel="stylesheet" href="assets/css/grid.css">
+    <link rel="stylesheet" href="assets/css/base.css">
+    <link rel="stylesheet" href="assets/css/category-product.css">
+    <link rel="stylesheet" href="assets/css/responsive.css">
+</head>
+
+<body>
+    <div class="wrapper">
+        <!-- Header -->
+        <header class="header">
+            <div class="grid wide header-content">
+                <a href="index.html" class="header-logo">
+                    <img src="assets/img/logo.png" alt="Header logo">
+                </a>
+                <div class="header-nav">
+                    <ul class="header-menu hide-on-mobile-tablet">
+                        <li class="menu-item">
+                            <a href="index.html" class="item-link">
+                                Trang chủ
+                            </a>
+                        </li>
+                        <li class="menu-item">
+                            <a href="category-product.html" class="item-link">
+                                Thịt tươi
+                            </a>
+                        </li>
+                        <li class="menu-item">
+                            <a href="category-product.html" class="item-link">
+                                Rau sạch
+                            </a>
+                        </li>
+                        <li class="menu-item">
+                            <a href="category-product.html" class="item-link">
+                                Quả ngọt
+                            </a>
+                        </li>
+                        <li class="menu-item">
+                            <a href="category-news.html" class="item-link">
+                                Cẩm nang
+                            </a>
+                        </li>
+                        <li class="menu-item">
+                            <a href="#footer" class="item-link">
+                                Liên hệ
+                            </a>
+                        </li>
+                        <li class="menu-item">
+                            <a href="cart.html" class="item-link">
+                                Thanh toán
+                            </a>
+                        </li>
+                    </ul>
+                    <div class="header-search">
+                        <label for="search-box-input" class="search-link">
+                                <i class="fas fa-search search-logo"></i>
+                        </label>
+
+                        <input type="checkbox" hidden id="search-box-input">
+                        <div class="search-box">
+                            <input type="text" class="search-input" placeholder="Search">
+                            <i class="fas fa-search search-btn"></i>
+                        </div>
+                    </div>
+                    <div class="header-cart">
+                        <a href="cart.html" class="cart has-cart">
+                            <img src="assets/img/cart/cart.png" alt="Cart" class="cart-logo">
+                            <span class="cart-num">3</span>
+                        </a>
+                    </div>
+                    <div class="header-mobile hide-on-pc">
+                        <input type="checkbox" hidden id="header-menu-input">
+                        <label for="header-menu-input" class="overlay"></label>
+                        <label for="header-menu-input" class="header-mobile-icon">
+                            <i class="fas fa-bars"></i>
+                        </label>
+                        <div class="mobile-menu">
+                            <label for="header-menu-input" class="esc-btn">
+                                <i class="fas fa-times"></i>
+                            </label>
+                            <img src="assets/img/logo.png" alt="Logo" class="mobile-menu-logo">
+                            <ul class="mobile-list">
+                                <li class="mobile-item">
+                                    <a href="index.html" class="mobile-link">Trang chủ</a>
+                                </li>
+                                <li class="mobile-item">
+                                    <a href="category-news.html" class="mobile-link">Cẩm nang</a>
+                                </li>
+                                <li class="mobile-item">
+                                    <a href="cart.html" class="mobile-link">Thanh toán</a>
+                                </li>
+                                <li class="mobile-item">
+                                    <a href="#footer" class="mobile-link">Liên hệ</a>
+                                </li>
+                            </ul>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </header>
+
+        <!-- Container -->
+        <div class="container">
+            <div class="breadcrumb">
+                <img src="assets/img/category-product/breadcrumb.png" class="breadcrumb-img" alt="Breadcrumb background">
+                <div class="breadcrumb-content">
+                    <span class="breadcrumb-text">
+                        <i class="fas fa-home"></i>
+                    </span>
+                    <span class="breadcrumb-text">
+                        <a href="index.html" class="breadcrumb-link">
+                            Trang chủ
+                        </a>
+                    </span>
+                    <span class="breadcrumb-text">
+                        <i class="fas fa-angle-right"></i>
+                    </span>
+                    <span class="breadcrumb-text">
+                        <a href="#" class="breadcrumb-link">
+                            Thực phẩm
+                        </a>
+                    </span>
+                </div>
+            </div>
+            <div class="grid wide">
+                <div class="filter">
+                    <span class="filter-title">
+                        Thực phẩm
+                    </span>
+                    <div class="filter-sortbar">
+                        <label for="sortbar-menu-input" class="sortbar-select">
+                            <span class="sortbar-label">Lọc giá từ cao đến thấp</span>
+                            <i class="sortbar-select-icon fas fa-caret-down"></i>
+                            <input type="checkbox" hidden id="sortbar-menu-input">
+                            <ul class="sortbar-menu">
+                                <li class="sortbar-item sortbar-check">
+                                    Lọc giá từ cao đến thấp
+                                    <i class="sortbar-icon fas fa-check"></i>
+                                </li>
+                                <li class="sortbar-item">
+                                    Lọc giá từ thấp đến cao
+                                    <i class="sortbar-icon fas fa-check"></i>
+                                </li>
+                                <li class="sortbar-item">
+                                    Gần đây nhất
+                                    <i class="sortbar-icon fas fa-check"></i>
+                                </li>
+                            </ul>
+                        </label>
+                        <label for="sortbar-menu-input" class="sortbar-btn">Lọc</label>
+                    </div>
+                </div>
+                <div class="row product-list">
+                    <div class="col l-3 m-4 c-6">
+                        <div class="product-item">
+                            <a href="detail-product.html" class="product-link">
+                                <img src="assets/img/new-product/new-product-1.png" alt="New Product" class="product-img">
+                                <div class="product-info">
+                                    <p class="product-name">Xà lách Lâm Đồng</p>
+                                    <span class="product-price">25.000 VNĐ</span>
+                                    <span class="add-cart">Thêm vào giỏ hàng</span>
+                                </div>
+                            </a>
+                        </div>
+                    </div>
+                    <div class="col l-3 m-4 c-6">
+                        <div class="product-item">
+                            <a href="detail-product.html" class="product-link">
+                                <img src="assets/img/new-product/new-product-2.png" alt="New Product" class="product-img">
+                                <div class="product-info">
+                                    <p class="product-name">Dẻ sường bò Úc</p>
+                                    <span class="product-price">250.000 VNĐ</span>
+                                    <span class="add-cart">Thêm vào giỏ hàng</span>
+                                </div>
+                            </a>
+                        </div>
+                    </div>
+                    <div class="col l-3 m-4 c-6">
+                        <div class="product-item">
+                            <a href="detail-product.html" class="product-link">
+                                <img src="assets/img/new-product/new-product-3.png" alt="New Product" class="product-img">
+                                <div class="product-info">
+                                    <p class="product-name">Nho đen Mỹ</p>
+                                    <span class="product-price">100.000 VNĐ</span>
+                                    <span class="add-cart">Thêm vào giỏ hàng</span>
+                                </div>
+                            </a>
+                        </div>
+                    </div>
+                    <div class="col l-3 m-4 c-6">
+                        <div class="product-item">
+                            <a href="detail-product.html" class="product-link">
+                                <img src="assets/img/new-product/new-product-4.png" alt="New Product" class="product-img">
+                                <div class="product-info">
+                                    <p class="product-name">Ngao trắng</p>
+                                    <span class="product-price">75.000 VNĐ</span>
+                                    <span class="add-cart">Thêm vào giỏ hàng</span>
+                                </div>
+                            </a>
+                        </div>
+                    </div>
+                    <div class="col l-3 m-4 c-6">
+                        <div class="product-item">
+                            <a href="detail-product.html" class="product-link">
+                                <img src="assets/img/new-product/new-product-1.png" alt="New Product" class="product-img">
+                                <div class="product-info">
+                                    <p class="product-name">Xà lách Lâm Đồng</p>
+                                    <span class="product-price">25.000 VNĐ</span>
+                                    <span class="add-cart">Thêm vào giỏ hàng</span>
+                                </div>
+                            </a>
+                        </div>
+                    </div>
+                    <div class="col l-3 m-4 c-6">
+                        <div class="product-item">
+                            <a href="detail-product.html" class="product-link">
+                                <img src="assets/img/new-product/new-product-2.png" alt="New Product" class="product-img">
+                                <div class="product-info">
+                                    <p class="product-name">Dẻ sường bò Úc</p>
+                                    <span class="product-price">250.000 VNĐ</span>
+                                    <span class="add-cart">Thêm vào giỏ hàng</span>
+                                </div>
+                            </a>
+                        </div>
+                    </div>
+                    <div class="col l-3 m-4 c-6">
+                        <div class="product-item">
+                            <a href="detail-product.html" class="product-link">
+                                <img src="assets/img/new-product/new-product-3.png" alt="New Product" class="product-img">
+                                <div class="product-info">
+                                    <p class="product-name">Nho đen Mỹ</p>
+                                    <span class="product-price">100.000 VNĐ</span>
+                                    <span class="add-cart">Thêm vào giỏ hàng</span>
+                                </div>
+                            </a>
+                        </div>
+                    </div>
+                    <div class="col l-3 m-4 c-6">
+                        <div class="product-item">
+                            <a href="detail-product.html" class="product-link">
+                                <img src="assets/img/new-product/new-product-4.png" alt="New Product" class="product-img">
+                                <div class="product-info">
+                                    <p class="product-name">Ngao trắng</p>
+                                    <span class="product-price">75.000 VNĐ</span>
+                                    <span class="add-cart">Thêm vào giỏ hàng</span>
+                                </div>
+                            </a>
+                        </div>
+                    </div>
+                    <div class="col l-3 m-4 c-6">
+                        <div class="product-item">
+                            <a href="detail-product.html" class="product-link">
+                                <img src="assets/img/new-product/new-product-1.png" alt="New Product" class="product-img">
+                                <div class="product-info">
+                                    <p class="product-name">Xà lách Lâm Đồng</p>
+                                    <span class="product-price">25.000 VNĐ</span>
+                                    <span class="add-cart">Thêm vào giỏ hàng</span>
+                                </div>
+                            </a>
+                        </div>
+                    </div>
+                    <div class="col l-3 m-4 c-6">
+                        <div class="product-item">
+                            <a href="detail-product.html" class="product-link">
+                                <img src="assets/img/new-product/new-product-2.png" alt="New Product" class="product-img">
+                                <div class="product-info">
+                                    <p class="product-name">Dẻ sường bò Úc</p>
+                                    <span class="product-price">250.000 VNĐ</span>
+                                    <span class="add-cart">Thêm vào giỏ hàng</span>
+                                </div>
+                            </a>
+                        </div>
+                    </div>
+                    <div class="col l-3 m-4 c-6">
+                        <div class="product-item">
+                            <a href="detail-product.html" class="product-link">
+                                <img src="assets/img/new-product/new-product-3.png" alt="New Product" class="product-img">
+                                <div class="product-info">
+                                    <p class="product-name">Nho đen Mỹ</p>
+                                    <span class="product-price">100.000 VNĐ</span>
+                                    <span class="add-cart">Thêm vào giỏ hàng</span>
+                                </div>
+                            </a>
+                        </div>
+                    </div>
+                    <div class="col l-3 m-4 c-6">
+                        <div class="product-item">
+                            <a href="detail-product.html" class="product-link">
+                                <img src="assets/img/new-product/new-product-4.png" alt="New Product" class="product-img">
+                                <div class="product-info">
+                                    <p class="product-name">Ngao trắng</p>
+                                    <span class="product-price">75.000 VNĐ</span>
+                                    <span class="add-cart">Thêm vào giỏ hàng</span>
+                                </div>
+                            </a>
+                        </div>
+                    </div>
+                </div>
+                <div class="page-control">
+                    <span class="page-number page-number-checked">1</span>
+                    <span class="page-number">2</span>
+                    <span class="page-number">3</span>
+                </div>
+            </div>
+
+        </div>
+
+        <!-- Footer -->
+        <footer class="footer" id="footer">
+            <div class="grid wide">
+                <div class="row footer-mobile">
+                    <div class="col l-4 m-6 c-12">
+                        <p class="footer-title">
+                            Trụ sở chính:
+                        </p>
+                        <a href="" class="footer-contact">
+                            Số 6A8A, Thanh Xuân Bắc, Phường Thanh Xuân Bắc, Quận Thanh Xuân, Thành phố Hà Nội.
+                        </a>
+                        <span class="footer-contact">
+                            Điện thoại:
+                            <a href="tel: 04.3311.3998">
+                                 04.3311.3998    
+                            </a>
+                        </span>
+                        <span class="footer-contact">
+                            Fax:
+                            <a href="tel: 04.3311.3998">
+                                 04.3311.3998    
+                            </a>
+                        </span>
+                    </div>
+                    <div class="col l-4 m-6 c-12">
+                        <p class="footer-title">
+                            Chi nhánh Đà Nẵng:
+                        </p>
+                        <a href="" class="footer-contact">
+                            Số 6A8A, Thanh Xuân Bắc, Phường Thanh Xuân Bắc, Quận Thanh Xuân, Thành phố Hà Nội.
+                        </a>
+                        <span class="footer-contact">
+                            Điện thoại:
+                            <a href="tel: 04.3311.3998">
+                                 04.3311.3998    
+                            </a>
+                        </span>
+                        <span class="footer-contact">
+                            Fax:
+                            <a href="tel: 04.3311.3998">
+                                 04.3311.3998    
+                            </a>
+                        </span>
+                    </div>
+                    <div class="col l-4 m-12 c-12">
+                        <p class="footer-title">
+                            Chi nhánh Hồ Chí Minh:
+                        </p>
+                        <a href="" class="footer-contact">
+                            Số 6A8A, Thanh Xuân Bắc, Phường Thanh Xuân Bắc, Quận Thanh Xuân, Thành phố Hà Nội.
+                        </a>
+                        <span class="footer-contact">
+                            Điện thoại:
+                            <a href="tel: 04.3311.3998">
+                                 04.3311.3998    
+                            </a>
+                        </span>
+                        <span class="footer-contact">
+                            Fax:
+                            <a href="tel: 04.3311.3998">
+                                 04.3311.3998    
+                            </a>
+                        </span>
+                    </div>
+                </div>
+            </div>
+            <div class="footer-copyright">
+                <p class="text-copyright ">Copyright © 2016 - All rights reserved</p>
+            </div>
+        </footer>
+    </div>
+</body>
+
+</html>

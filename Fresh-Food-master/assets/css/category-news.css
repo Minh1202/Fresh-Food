@@ -1,0 +1,36 @@
+.hand-book-item {
+    margin-bottom: 26px;
+}
+
+.hand-book-img img {
+    width: 100%;
+}
+
+.item-title {
+    font-size: 2.2rem;
+    color: var(--text-color);
+    margin-bottom: 10px;
+}
+
+.item-time {
+    color: #777;
+    font-size: 1.3rem;
+    margin-bottom: 18px;
+    display: block;
+}
+
+.item-time:hover {
+    text-decoration: underline;
+}
+
+.item-desc {
+    font-size: 1.3rem;
+    line-height: 25px;
+    color: #636363;
+    text-align: justify;
+    height: 100px;
+    overflow: hidden;
+    display: -webkit-box;
+    -webkit-box-orient: vertical;
+    -webkit-line-clamp: 4;
+}
